@@ -26,9 +26,15 @@ contract Sale {
         currentKey = 0;    
     }
 
-    function payForListing(uint listingID) public payable {
+    function payForListing(uint listingId) public payable {
+        uint listingPrice = listings[listingId].price;
+        address listingPayee = listings[listingsId].listingMaker;
+        address personPaying = msg.sender;
+
+        require(personPaying.balance >= listingPrice);
+        
         // Listing A: Car, 1 Ether, User A (address); with 100ETH
-                
+        
         // User B: Address; with 100ETH => payForListing
         
         // DEDUCT 1ETH FROM USER B => SALE.SOL (ADDRESS) TAKES 0.25(1ETH) => USER A GETS 1ETH-(0.25*1ETH)
