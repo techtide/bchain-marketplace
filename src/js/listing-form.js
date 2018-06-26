@@ -11,14 +11,14 @@ class ListingForm extends React.Component {
                     <br></br>
                     Listing name:
                     <br></br>
-                    <input type="text" name="listingname" value=""></input>
+                    <input type="text" name="listingname"></input>
                     <br></br>
                     Listing price (cash if non-digital payment, ether if digital):
                     <br></br>
-                    <input type="text" name="listingprice" value=""></input>
+                    <input type="text" name="listingprice"></input>
                     <br></br>
                     <input type="submit" value="Submit"></input>
-                    <p><i>Your address, {this.props.address} will be recorded, and your listing will also be verified by a moderator.</i></p>
+                    <p><i>Your address, {this.props.address}, will be recorded, and your listing will also be verified by a moderator.</i></p>
                 </form>
             </div>
         );

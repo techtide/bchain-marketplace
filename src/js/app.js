@@ -6,25 +6,39 @@ class App extends React.Component {
     constructor() {
         super();
         this.state = {
-          showForm: false
+          showCreateForm: false
         }
+      }
+
+    onClick(e){
+        e.preventDefault();
+        this.setState({showCreateForm: !this.state.showCreateForm})
+    }
+
+    renderForm() {
+        if(this.state.showCreateForm) {
+            return(
+            <ListingForm address="dummy-address"></ListingForm>
+            );
+        } 
     }
 
     render() {
         return( 
             <div>
                 <div id="header">
-                    <h1 id="inline-block"> Marketplace </h1>
-                    <button type="button" id="header-button" onClick="{showCreateListingForm}">Create</button>
+                    <h1 id="inline-block"> Marketplace</h1>
+                    <button type="button" id="header-button" onClick={this.onClick.bind(this)}>Create</button> 
                 </div>
-                <div class="grid">
-                    <div class="col-1-3">
+                {this.renderForm()}
+                <div className="grid">
+                    <div className="col-1-3">
+                        <Listing name="Car" price="1ETH"></Listing>
+                    </div>
+                    <div className="col-1-3">
                         
                     </div>
-                    <div class="col-1-3">
-                        
-                    </div>
-                    <div class="col-1-3">
+                    <div className="col-1-3">
                         
                     </div>
                 </div>
