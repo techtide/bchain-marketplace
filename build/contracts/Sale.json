@@ -1,0 +1,1110 @@
+{
+  "contractName": "Sale",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "currentKey",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "listings",
+      "outputs": [
+        {
+          "name": "listingName",
+          "type": "string"
+        },
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "dealType",
+          "type": "uint8"
+        },
+        {
+          "name": "paymentOption",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "typeOfDeal",
+          "type": "uint8"
+        },
+        {
+          "name": "typeOfPayment",
+          "type": "uint8"
+        }
+      ],
+      "name": "createListing",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060008081905550610305806100276000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a0ddb4181461005c578063a6f7afcd14610087578063de74e57b14610114575b600080fd5b34801561006857600080fd5b506100716101eb565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b50610112600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190803560ff169060200190929190803560ff1690602001909291905050506101f1565b005b34801561012057600080fd5b5061013f600480360381019080803590602001909291905050506101f7565b604051808060200185815260200184600181111561015957fe5b60ff16815260200183600181111561016d57fe5b60ff168152602001828103825286818151815260200191508051906020019080838360005b838110156101ad578082015181840152602081019050610192565b50505050905090810190601f1680156101da5780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60005481565b50505050565b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102a35780601f10610278576101008083540402835291602001916102a3565b820191906000526020600020905b81548152906001019060200180831161028657829003601f168201915b5050505050908060010154908060020160009054906101000a900460ff16908060020160019054906101000a900460ff169050845600a165627a7a72305820e89acb5706b1296c65c925bdcf0aa3d1c6cbb57f55c68568f9a6e558eccd59620029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a0ddb4181461005c578063a6f7afcd14610087578063de74e57b14610114575b600080fd5b34801561006857600080fd5b506100716101eb565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b50610112600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190803560ff169060200190929190803560ff1690602001909291905050506101f1565b005b34801561012057600080fd5b5061013f600480360381019080803590602001909291905050506101f7565b604051808060200185815260200184600181111561015957fe5b60ff16815260200183600181111561016d57fe5b60ff168152602001828103825286818151815260200191508051906020019080838360005b838110156101ad578082015181840152602081019050610192565b50505050905090810190601f1680156101da5780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60005481565b50505050565b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102a35780601f10610278576101008083540402835291602001916102a3565b820191906000526020600020905b81548152906001019060200180831161028657829003601f168201915b5050505050908060010154908060020160009054906101000a900460ff16908060020160019054906101000a900460ff169050845600a165627a7a72305820e89acb5706b1296c65c925bdcf0aa3d1c6cbb57f55c68568f9a6e558eccd59620029",
+  "sourceMap": "26:767:1:-;;;479:57;8:9:-1;5:2;;;30:1;27;20:12;5:2;479:57:1;524:1;511:10;:14;;;;26:767;;;;;;",
+  "deployedSourceMap": "26:767:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;399:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;399:22:1;;;;;;;;;;;;;;;;;;;;;;;546:245;;8:9:-1;5:2;;;30:1;27;20:12;5:2;546:245:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;431:41;;8:9:-1;5:2;;;30:1;27;20:12;5:2;431:41:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;431:41:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;399:22;;;;:::o;546:245::-;;;;;:::o;431:41::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract Sale {\n    enum DealType { physical, digital } \n    enum PaymentOption { cash, crypto }\n    \n    struct Listing {\n        // General meta-data of the listing.\n        string listingName;\n        uint price; \n        // Logistics of the listing: How will it happen? How will the buyer pay?\n        DealType dealType;\n        PaymentOption paymentOption;\n    }\n\n    uint public currentKey;    \n    mapping (uint => Listing) public listings;\n\n    constructor () public {\n        currentKey = 0;    \n    }\n    \n    function createListing(string name, uint price, DealType typeOfDeal, PaymentOption typeOfPayment) public {\n       // Listing storage newListing = Listing(name, price, typeOfDeal, typeOfPayment);\n       // listings[currentKey+1]=newListing;\n    }\n}",
+  "sourcePath": "/home/greenie/Documents/marketplace/contracts/Sale.sol",
+  "ast": {
+    "absolutePath": "/home/greenie/Documents/marketplace/contracts/Sale.sol",
+    "exportedSymbols": {
+      "Sale": [
+        100
+      ]
+    },
+    "id": 101,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 100,
+        "linearizedBaseContracts": [
+          100
+        ],
+        "name": "Sale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Sale.DealType",
+            "id": 61,
+            "members": [
+              {
+                "id": 59,
+                "name": "physical",
+                "nodeType": "EnumValue",
+                "src": "62:8:1"
+              },
+              {
+                "id": 60,
+                "name": "digital",
+                "nodeType": "EnumValue",
+                "src": "72:7:1"
+              }
+            ],
+            "name": "DealType",
+            "nodeType": "EnumDefinition",
+            "src": "46:35:1"
+          },
+          {
+            "canonicalName": "Sale.PaymentOption",
+            "id": 64,
+            "members": [
+              {
+                "id": 62,
+                "name": "cash",
+                "nodeType": "EnumValue",
+                "src": "108:4:1"
+              },
+              {
+                "id": 63,
+                "name": "crypto",
+                "nodeType": "EnumValue",
+                "src": "114:6:1"
+              }
+            ],
+            "name": "PaymentOption",
+            "nodeType": "EnumDefinition",
+            "src": "87:35:1"
+          },
+          {
+            "canonicalName": "Sale.Listing",
+            "id": 73,
+            "members": [
+              {
+                "constant": false,
+                "id": 66,
+                "name": "listingName",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "202:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "202:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 68,
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "230:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 67,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "230:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 70,
+                "name": "dealType",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "332:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_DealType_$61",
+                  "typeString": "enum Sale.DealType"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 69,
+                  "name": "DealType",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 61,
+                  "src": "332:8:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_DealType_$61",
+                    "typeString": "enum Sale.DealType"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 72,
+                "name": "paymentOption",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "359:27:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_PaymentOption_$64",
+                  "typeString": "enum Sale.PaymentOption"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 71,
+                  "name": "PaymentOption",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 64,
+                  "src": "359:13:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentOption_$64",
+                    "typeString": "enum Sale.PaymentOption"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Listing",
+            "nodeType": "StructDefinition",
+            "scope": 100,
+            "src": "132:261:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 75,
+            "name": "currentKey",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "399:22:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 74,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "399:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 79,
+            "name": "listings",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "431:41:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Listing_$73_storage_$",
+              "typeString": "mapping(uint256 => struct Sale.Listing)"
+            },
+            "typeName": {
+              "id": 78,
+              "keyType": {
+                "id": 76,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "440:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "431:25:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Listing_$73_storage_$",
+                "typeString": "mapping(uint256 => struct Sale.Listing)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 77,
+                "name": "Listing",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 73,
+                "src": "448:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Listing_$73_storage_ptr",
+                  "typeString": "struct Sale.Listing"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 86,
+              "nodeType": "Block",
+              "src": "501:35:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 84,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 82,
+                      "name": "currentKey",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75,
+                      "src": "511:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 83,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "524:1:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "511:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 85,
+                  "nodeType": "ExpressionStatement",
+                  "src": "511:14:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 87,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 80,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "491:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 81,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "501:0:1"
+            },
+            "scope": 100,
+            "src": "479:57:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 98,
+              "nodeType": "Block",
+              "src": "651:140:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 99,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createListing",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 96,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 89,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "569:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 88,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "569:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 91,
+                  "name": "price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "582:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 90,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "582:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 93,
+                  "name": "typeOfDeal",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "594:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_DealType_$61",
+                    "typeString": "enum Sale.DealType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 92,
+                    "name": "DealType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 61,
+                    "src": "594:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_DealType_$61",
+                      "typeString": "enum Sale.DealType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 95,
+                  "name": "typeOfPayment",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "615:27:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentOption_$64",
+                    "typeString": "enum Sale.PaymentOption"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 94,
+                    "name": "PaymentOption",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 64,
+                    "src": "615:13:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_PaymentOption_$64",
+                      "typeString": "enum Sale.PaymentOption"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "568:75:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 97,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "651:0:1"
+            },
+            "scope": 100,
+            "src": "546:245:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 101,
+        "src": "26:767:1"
+      }
+    ],
+    "src": "0:793:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/greenie/Documents/marketplace/contracts/Sale.sol",
+    "exportedSymbols": {
+      "Sale": [
+        100
+      ]
+    },
+    "id": 101,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 100,
+        "linearizedBaseContracts": [
+          100
+        ],
+        "name": "Sale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Sale.DealType",
+            "id": 61,
+            "members": [
+              {
+                "id": 59,
+                "name": "physical",
+                "nodeType": "EnumValue",
+                "src": "62:8:1"
+              },
+              {
+                "id": 60,
+                "name": "digital",
+                "nodeType": "EnumValue",
+                "src": "72:7:1"
+              }
+            ],
+            "name": "DealType",
+            "nodeType": "EnumDefinition",
+            "src": "46:35:1"
+          },
+          {
+            "canonicalName": "Sale.PaymentOption",
+            "id": 64,
+            "members": [
+              {
+                "id": 62,
+                "name": "cash",
+                "nodeType": "EnumValue",
+                "src": "108:4:1"
+              },
+              {
+                "id": 63,
+                "name": "crypto",
+                "nodeType": "EnumValue",
+                "src": "114:6:1"
+              }
+            ],
+            "name": "PaymentOption",
+            "nodeType": "EnumDefinition",
+            "src": "87:35:1"
+          },
+          {
+            "canonicalName": "Sale.Listing",
+            "id": 73,
+            "members": [
+              {
+                "constant": false,
+                "id": 66,
+                "name": "listingName",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "202:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "202:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 68,
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "230:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 67,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "230:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 70,
+                "name": "dealType",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "332:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_DealType_$61",
+                  "typeString": "enum Sale.DealType"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 69,
+                  "name": "DealType",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 61,
+                  "src": "332:8:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_DealType_$61",
+                    "typeString": "enum Sale.DealType"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 72,
+                "name": "paymentOption",
+                "nodeType": "VariableDeclaration",
+                "scope": 73,
+                "src": "359:27:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_PaymentOption_$64",
+                  "typeString": "enum Sale.PaymentOption"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 71,
+                  "name": "PaymentOption",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 64,
+                  "src": "359:13:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentOption_$64",
+                    "typeString": "enum Sale.PaymentOption"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Listing",
+            "nodeType": "StructDefinition",
+            "scope": 100,
+            "src": "132:261:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 75,
+            "name": "currentKey",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "399:22:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 74,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "399:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 79,
+            "name": "listings",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "431:41:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Listing_$73_storage_$",
+              "typeString": "mapping(uint256 => struct Sale.Listing)"
+            },
+            "typeName": {
+              "id": 78,
+              "keyType": {
+                "id": 76,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "440:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "431:25:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Listing_$73_storage_$",
+                "typeString": "mapping(uint256 => struct Sale.Listing)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 77,
+                "name": "Listing",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 73,
+                "src": "448:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Listing_$73_storage_ptr",
+                  "typeString": "struct Sale.Listing"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 86,
+              "nodeType": "Block",
+              "src": "501:35:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 84,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 82,
+                      "name": "currentKey",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75,
+                      "src": "511:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 83,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "524:1:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "511:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 85,
+                  "nodeType": "ExpressionStatement",
+                  "src": "511:14:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 87,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 80,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "491:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 81,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "501:0:1"
+            },
+            "scope": 100,
+            "src": "479:57:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 98,
+              "nodeType": "Block",
+              "src": "651:140:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 99,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createListing",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 96,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 89,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "569:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 88,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "569:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 91,
+                  "name": "price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "582:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 90,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "582:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 93,
+                  "name": "typeOfDeal",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "594:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_DealType_$61",
+                    "typeString": "enum Sale.DealType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 92,
+                    "name": "DealType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 61,
+                    "src": "594:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_DealType_$61",
+                      "typeString": "enum Sale.DealType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 95,
+                  "name": "typeOfPayment",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "615:27:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentOption_$64",
+                    "typeString": "enum Sale.PaymentOption"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 94,
+                    "name": "PaymentOption",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 64,
+                    "src": "615:13:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_PaymentOption_$64",
+                      "typeString": "enum Sale.PaymentOption"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "568:75:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 97,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "651:0:1"
+            },
+            "scope": 100,
+            "src": "546:245:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 101,
+        "src": "26:767:1"
+      }
+    ],
+    "src": "0:793:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x5d2b781793bec91c0e89d8a58e66e7d97f54b4e7",
+      "transactionHash": "0x965fb0e755d1df7171ff0405bfb382f1521844f3ba56822f9de5f27201a6c67b"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-06-25T21:04:59.195Z"
+}
