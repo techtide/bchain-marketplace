@@ -1,6 +1,6 @@
-var Sale = artifacts.require("./contracts/Sale.sol");
+var Marketplace = artifacts.require("./contracts/Marketplace.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(Sale);
+  deployer.deploy(Marketplace);
 };
 
