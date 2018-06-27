@@ -26,20 +26,20 @@ contract Sale {
         currentKey = 0;    
     }
 
-    function payForListing(uint listingId) public payable {
-        uint listingPrice = listings[listingId].price;
-        address listingPayee = listings[listingsId].listingMaker;
-        address personPaying = msg.sender;
+    // function payForListing(uint listingId) public payable {
+    //     uint listingPrice = listings[listingId].price;
+    //     address listingPayee = listings[listingId].listingMaker;
+    //     address personPaying = msg.sender;
 
-        require(personPaying.balance >= listingPrice);
+    //     require(personPaying.balance >= listingPrice);
         
-        // Listing A: Car, 1 Ether, User A (address); with 100ETH
+    //     // Listing A: Car, 1 Ether, User A (address); with 100ETH
         
-        // User B: Address; with 100ETH => payForListing
+    //     // User B: Address; with 100ETH => payForListing
         
-        // DEDUCT 1ETH FROM USER B => SALE.SOL (ADDRESS) TAKES 0.25(1ETH) => USER A GETS 1ETH-(0.25*1ETH)
+    //     // DEDUCT 1ETH FROM USER B => SALE.SOL (ADDRESS) TAKES 0.25(1ETH) => USER A GETS 1ETH-(0.25*1ETH)
 
-    }
+    // }
 
     function create(string nName, uint nPrice, address nListingMaker) public {
         newListing = Listing({listingName: nName, price: nPrice, listingMaker: nListingMaker});
