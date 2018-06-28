@@ -23,8 +23,22 @@ contract Marketplace {
 
     function deleteListing(uint id) public {
         // It'd take more lines to write a modifier, because there's a mapping id.
-        // require(msg.sender != allListings[id].creator);
+        if(msg.sender != allListings[1].creator) {
+            revert();
+        }
         delete allListings[id];
         numberOfListings -= 1;
+    }
+
+    function getListing(uint id) public constant returns(string, uint) {
+        return (allListings[id].name, allListings[id].price);
+    }
+
+    function modifyListing(uint id, string modifiedName, uint modifiedPrice) public {
+        if(allListings[id].creator != msg.sender) {
+            revert();
+        }
+        allListings[id].name = modifiedName;
+        allListings[id].price = modifiedPrice;
     }
 }
