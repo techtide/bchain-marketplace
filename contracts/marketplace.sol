@@ -13,11 +13,18 @@ contract Marketplace {
     mapping (uint=>Listing) public allListings;
 
     constructor () public {
-        
+        numberOfListings = 0;       
     }
 
     function createListing(string name, uint price) public {
         allListings[numberOfListings+1] = Listing(name, price, msg.sender);
+        numberOfListings += 1;
     }
 
+    function deleteListing(uint id) public {
+        // It'd take more lines to write a modifier, because there's a mapping id.
+        // require(msg.sender != allListings[id].creator);
+        delete allListings[id];
+        numberOfListings -= 1;
+    }
 }
