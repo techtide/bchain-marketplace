@@ -12,7 +12,7 @@ contract Marketplace {
     uint private numberOfListings;
     mapping (uint=>Listing) public allListings;
 
-    constructor () public {
+    constructor() public {
         numberOfListings = 0;       
     }
 
@@ -40,5 +40,11 @@ contract Marketplace {
         }
         allListings[id].name = modifiedName;
         allListings[id].price = modifiedPrice;
+    }
+
+    function makeListingOffer(uint id) payable public {
+        require(msg.value == allListings[id].price);
+        // Take 5% off of the price. We'll keep the 5%, the listing creator's can have the rest.
+        allListings[id].creator.transfer(allListings[id].price - ((5*allListings[id].price)/100));
     }
 }
