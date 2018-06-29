@@ -6,6 +6,18 @@
   "directories": {
     "test": "test"
   },
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "css-loader": "^0.28.10",
+    "i": "^0.3.6",
+    "json-loader": "^0.5.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reactstrap": "^5.0.0-beta.2",
+    "style-loader": "^0.20.2",
+    "truffle-contract": "^3.0.4",
+    "web3": "^0.20.5"
+  },
   "dependencies": {
     "autoprefixer-stylus": "0.14.0",
     "firebase": "^4.10.1",

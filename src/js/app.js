@@ -1,12 +1,19 @@
 import React from 'react';
 import Listing from "./listing.js";
 import ListingForm from './listing-form.js';
+import ReactDOM from 'react-dom'
+import Web3 from 'web3'
+import TruffleContract from 'truffle-contract'
+import Marketplace from ''
 
 class App extends React.Component {
     constructor() {
         super();
         this.state = {
-          showCreateForm: false
+            account: '0x0',
+            listings: [],
+            
+            showCreateForm: false
         }
       }
 
