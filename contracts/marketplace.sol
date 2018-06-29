@@ -17,6 +17,7 @@ contract Marketplace {
     }
 
     function createListing(string name, uint price) public {
+        // TO-DO: Make this so that the starting index is 0 and not 1.
         allListings[numberOfListings+1] = Listing(name, price, msg.sender);
         numberOfListings += 1;
     }
@@ -43,7 +44,11 @@ contract Marketplace {
     }
 
     function makeListingOffer(uint id) payable public {
-        require(msg.value == allListings[id].price);
+        // require(msg.value == allListings[id].price);
+        if(msg.value != allListings[id].price) {
+            revert("Too much or too little money sent to cover the listing.");
+            msg.sender.transfer(msg.value);
+        }
         // Take 5% off of the price. We'll keep the 5%, the listing creator's can have the rest.
         allListings[id].creator.transfer(allListings[id].price - ((5*allListings[id].price)/100));
     }
