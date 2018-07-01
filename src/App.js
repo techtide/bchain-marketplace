@@ -25,15 +25,15 @@ class App extends React.Component {
             return(
             <ListingForm address="dummy-address"></ListingForm>
             );
-        } 
+        }
     }
 
     render() {
-        return( 
+        return(
             <div>
                 <div id="header">
                     <h1 id="inline-block"> Marketplace</h1>
-                    <button type="button" id="header-button" onClick={this.onClick.bind(this)}>Create</button> 
+                    <button type="button" id="header-button" onClick={this.onClick.bind(this)}>Create</button>
                 </div>
                 {this.renderForm()}
                 <div className="grid">
@@ -41,10 +41,10 @@ class App extends React.Component {
                         <Listing name="Car" price="1ETH"></Listing>
                     </div>
                     <div className="col-1-3">
-                        
+
                     </div>
                     <div className="col-1-3">
-                        
+
                     </div>
                 </div>
             </div>
