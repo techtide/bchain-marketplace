@@ -11,8 +11,24 @@ class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            showCreateForm: false
+          account: '0x0',
+          listings: [],
+          loading: true,
+          // Component variables
+          showCreateForm: false
         }
+
+        if (typeof web3 != 'undefined') {
+            this.web3provider = web3.currentProvider;
+        } else {
+            this.web3provider = new Web3.providers.HttpProvider('http://localhost:7545');
+        }
+
+        this.web3 = new Web3(this.web3provider);
+
+        this.Marketplace = TruffleContract(Marketplace);
+        this.Marketplace.setProvider(this.web3provider);
+        
     }
 
     onClick(e){
@@ -52,4 +68,19 @@ class App extends React.Component {
     }
 }
 
-export default App;
+  account: '0x0',
+  listings: [],
+  loading: true,
+  // Component variablesexport default App;
+
+
+if (typeof web3 != 'undefined') {
+    this.web3provider = web3.currentProvide else {
+        this.web3provider = new Web3.providers.HttpProvider('http://localhost:7545');
+    }
+
+    this.web3 = new Web3(this.web3provider);
+
+    this.Marketplace = TruffleContract(Marketplac;
+      this.Marketplace.setProvider(this.web3provider);
+      
